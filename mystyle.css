@@ -1,0 +1,71 @@
+body{
+	background-color:#FFFFFF;
+	background-size: cover;
+	height:100%;
+}
+
+#canvas{
+	width:55%; 
+	height:55%;
+	margin: 0 auto;
+	position: absolute;
+	top: -25%; 
+	left: -25%; 
+	border: 1 px solid red;
+	-webkit-transition: width 3s, height 3s,  -webkit-transform 3s;
+	transition: width 3s, height 3s,  transform 3s;  				}
+
+#canvas.trigger{
+	-webkit-animation-name:movimiento;
+	-webkit-animation-duration:3s;
+	animation-name: movimiento;
+	animation-duration:3s;
+	}	
+			
+@-webkit-keyframes movimiento{
+	0%   {top:100%;}
+	25%  {top:75%;}
+	50%  {top:50%;}
+	75%  {top:25%;}
+	100% {top:0%;}
+}
+			
+@keyframes movimiento{
+	0%   {top:100%;}
+	25%  {top:75%;}
+	50%  {top:50%;}
+	75%  {top:25%;}
+	100% {top:0%;}
+}
+
+#centrar{
+	position:absolute;
+	width:50%;
+	height:50%;
+	top:50%; 
+	left:50%;
+} 
+			
+#canvas:hover{
+	width:70%;
+	height:70%;
+	-webkit-transform: rotate(360deg);
+	transform:rotate(360deg);
+}       
+								 
+select,button{		
+	display: block;
+	margin: 0 auto;
+}
+
+.form-control{
+	display: block;
+	margin: 0 auto;
+	width:15%;
+}
+
+#personaje{
+	display: block;
+	margin: 0 auto;
+	width:15%;
+ }  

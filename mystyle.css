@@ -1,8 +1,16 @@
 body{
 	background-color:#FFFFFF;
-	background-size: cover;
 	height:100%;
+	width:100%;
 }
+
+#centrar{
+	position:absolute;
+	width:50%;
+	height:50%;
+	top:50%; 
+	left:50%;
+} 
 
 #canvas{
 	width:55%; 
@@ -38,13 +46,7 @@ body{
 	100% {top:0%;}
 }
 
-#centrar{
-	position:absolute;
-	width:50%;
-	height:50%;
-	top:50%; 
-	left:50%;
-} 
+
 			
 #canvas:hover{
 	width:70%;
@@ -56,16 +58,28 @@ body{
 select,button{		
 	display: block;
 	margin: 0 auto;
+	width:30%;
 }
 
 .form-control{
 	display: block;
 	margin: 0 auto;
-	width:15%;
+	width:35%;
 }
 
 #personaje{
 	display: block;
 	margin: 0 auto;
-	width:15%;
+	width:35%;
  }  
+ 
+ .playanimation{
+ 	display: block;
+	margin: 0 auto;
+	width:25%;
+ 
+ }
+ 
+ h3{
+ text-align:center;
+}

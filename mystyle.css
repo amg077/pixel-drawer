@@ -4,7 +4,7 @@ body{
 	width:100%;
 }
 
-#centrar{
+#center{
 	position:absolute;
 	width:50%;
 	height:50%;
@@ -13,22 +13,23 @@ body{
 } 
 
 #canvas{
-	width:55%; 
-	height:55%;
+	width:100%; 
+	height:50%;
 	margin: 0 auto;
 	position: absolute;
 	top: -25%; 
-	left: -25%; 
+	left: -40%; 
 	border: 1 px solid red;
 	-webkit-transition: width 3s, height 3s,  -webkit-transform 3s;
-	transition: width 3s, height 3s,  transform 3s;  				}
+	transition: width 3s, height 3s,  transform 3s;  				
+}
 
 #canvas.trigger{
 	-webkit-animation-name:movimiento;
 	-webkit-animation-duration:3s;
 	animation-name: movimiento;
 	animation-duration:3s;
-	}	
+}	
 			
 @-webkit-keyframes movimiento{
 	0%   {top:100%;}
@@ -45,14 +46,12 @@ body{
 	75%  {top:25%;}
 	100% {top:0%;}
 }
-
-
 			
 #canvas:hover{
 	width:70%;
 	height:70%;
 	-webkit-transform: rotate(360deg);
-	transform:rotate(360deg);
+	transform:rotate(360deg);*/
 }       
 								 
 select,button{		
@@ -67,7 +66,7 @@ select,button{
 	width:35%;
 }
 
-#personaje{
+#character{
 	display: block;
 	margin: 0 auto;
 	width:35%;
@@ -77,9 +76,17 @@ select,button{
  	display: block;
 	margin: 0 auto;
 	width:25%;
- 
  }
  
  h3{
  text-align:center;
+}
+
+#return{
+	bottom: 10%;
+}
+
+#canvastexto{
+	width:100%;
+	height:10%;	
 }
